@@ -1,23 +1,23 @@
-const lamp = document.getElementById('lamp');
-const turnOn = document.getElementById('turnOn');
-const turnOff = document.getElementById('turnOff');
+const Fruta = document.getElementById('Fruta');
+const Trocar = document.getElementById('Trocar');
+const Destrocar = document.getElementById('Destrocar');
 
-function isLampBroken(){
+function isMorangoTroca(){
     return lamp.src.indexOf('quebrada')> -1;}
 
-function LampOn(){
-    if(!isLampBroken()){
-        lamp.src= 'ligada.jpg';}}
+function Trocar(){
+    if(!isMorangoTroca()){
+        lamp.src= 'Sorvete.jpg';}}
         
-function LampOff(){
-    if(!isLampBroken()){
-        lamp.src= 'desligada.jpg';}}
+function Destrocar(){
+    if(!isMorangoTroca()){
+        lamp.src= 'Morango.jpg';}}
 
 function LampBroken(){
-        lamp.src = 'quebrada.jpg';
+        lamp.src = 'Maca.jpg';
 }
-turnOn.addEventListener('click',LampOn);
-turnOff.addEventListener('click',LampOff);
-lamp.addEventListener('mouseover',LampOn);
-lamp.addEventListener('mouseleave',LampOff);
-lamp.addEventListener('dblclick',LampBroken);
+Trocar.addEventListener('click',Trocar);
+Destrocar.addEventListener('click',Destrocar);
+Fruta.addEventListener('mouseover',LampOn);
+Fruta.addEventListener('mouseleave',LampOff);
+Fruta.addEventListener('dblclick',LampBroken);
